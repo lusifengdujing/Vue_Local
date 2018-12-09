@@ -2,11 +2,26 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Local</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./content/caculator.css">
+    <script src="./scripts/vue.js"></script>
+    <script src="./scripts/component.js"></script>
+   
 </head>
 <body>
-    <div>
-        hello
+    <div id='app'>
+        <caculator></caculator>
     </div>
+
+    <script>
+        var app=new Vue({
+            el:'#app',
+            data:{
+                x:'2'
+            }
+        });
+    </script>
 </body>
 </html>
